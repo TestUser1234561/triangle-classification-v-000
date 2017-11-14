@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    if (@s1 <= 0 or @s2 <= 0 or @s3 <= 0) or (@s2 + @s1 < @s3)
+    if (@s1 <= 0 or @s2 <= 0 or @s3 <= 0) or (@s2 + @s1 < @s3 or @s2 + @s3 < @s1 or @s1 + @s3 < @s2)
       raise TriangleError
     end
     return :equilateral if @s1 == @s2 and @s1 == @s3
