@@ -1,6 +1,6 @@
 class Triangle
 
-  
+
 
 end
 
